@@ -7,10 +7,11 @@ function Basket({ active, setClose }) {
   const card = useSelector((state) => state);
   const dispatch = useDispatch();
 
-  const handleRemoveFromCard = (id) => {
+  const handleRemoveFromCard = (id, selectedSize) => {
     dispatch(
       removeFromCard({
         id: id,
+        selectedSize: selectedSize,
       })
     );
   };
@@ -54,7 +55,7 @@ function Basket({ active, setClose }) {
               </h3>
               <button
                 className="basket-container-list-item-delete"
-                onClick={() => handleRemoveFromCard(item.id)}
+                onClick={() => handleRemoveFromCard(item.id, item.selectedSize)}
               >
                 Delete
               </button>
