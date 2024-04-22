@@ -10,7 +10,7 @@
       "description": "Cool and comfortable in any setting, wear our lightweight cotton bucket hat everywhere you go.",
       "material": "100% cotton",
       "color": "Navy blue",
-      "image": "./src/assets/products/bucket.jpeg"
+      "image": "/assets/products/bucket.jpeg"
     },
     {
       "id": 2,
@@ -28,7 +28,7 @@
       "material": "100% cotton",
       "color": "Sky blue",
       "fit": "Relaxed",
-      "image": "./src/assets/products/cotton.jpeg"
+      "image": "/assets/products/cotton.jpeg"
     },
     {
       "id": 3,
@@ -41,7 +41,7 @@
       "description": "Take the casual approach with our stretchy soft knit hat, made using sustainable materials.",
       "material": "60% recycled wool, 40% organic cotton",
       "color": "Forest green",
-      "image": "./src/assets/products/knitted.jpeg"
+      "image": "/assets/products/knitted.jpeg"
     },
     {
       "id": 4,
@@ -60,7 +60,7 @@
       "material": "100% polyester",
       "color": "Beige",
       "fit": "Classic",
-      "image": "./src/assets/products/puffer.jpeg"
+      "image": "/assets/products/puffer.jpeg"
     },
     {
       "id": 5,
@@ -78,7 +78,7 @@
       "material": "70% cotton, 30% linen",
       "color": "Forest green",
       "fit": "Relaxed",
-      "image": "./src/assets/products/shirt.jpeg"
+      "image": "/assets/products/shirt.jpeg"
     },
     {
       "id": 6,
@@ -96,7 +96,7 @@
       "material": "100% cotton",
       "color": "White",
       "fit": "Relaxed",
-      "image": "./src/assets/products/utility.jpeg"
+      "image": "/assets/products/utility.jpeg"
     }
   ]
 }
