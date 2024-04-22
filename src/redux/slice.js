@@ -34,7 +34,11 @@ const slice = createSlice({
           (item) => item.selectedSize === action.payload.selectedSize
         )
       ) {
-        state.card = state.card.filter((item) => item.id !== action.payload.id);
+        state.card = state.card.filter(
+          (item) =>
+            item.id !== action.payload.id &&
+            item.selectedSize !== action.payload.selectedSize
+        );
       }
     },
   },
