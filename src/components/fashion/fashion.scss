@@ -1,0 +1,25 @@
+.fashion {
+  display: flex;
+  padding: 100px;
+  gap: 0px 50px;
+
+  &-contain {
+    display: flex;
+    flex-direction: column;
+
+    &-image {
+      margin-bottom: 20px;
+    }
+
+    &-description {
+      width: 100%;
+      font-size: 18px;
+      color: rgb(63, 71, 82);
+    }
+  }
+
+  &-image {
+    width: 70%;
+    height: 100%;
+  }
+}

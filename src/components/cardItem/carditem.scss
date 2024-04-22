@@ -1,0 +1,38 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &-image {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &-sale {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background: rgba(29, 30, 32);
+    color: rgba(255, 255, 255);
+    padding: 5px 10px;
+    text-transform: uppercase;
+  }
+
+  &-price {
+    display: flex;
+    gap: 0px 5px;
+
+    &-original {
+      opacity: 0.4;
+      text-decoration: line-through;
+    }
+  }
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

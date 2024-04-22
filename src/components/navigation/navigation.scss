@@ -1,0 +1,41 @@
+@import "../../style/_inheritance.scss";
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 0px 0px;
+  padding: 0px 0px 100px 100px;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0px;
+
+    &-description {
+      width: 70%;
+      color: rgb(63, 71, 82);
+    }
+
+    &-navigate {
+      @extend %flexing;
+      width: 150px;
+      height: 50px;
+      text-transform: uppercase;
+      background: rgb(28, 56, 92);
+      color: rgba(255, 255, 255);
+      border: 5px solid rgb(47, 47, 73);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background: rgb(62, 62, 84);
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+
+  &-all {
+    display: flex;
+    align-items: end;
+    gap: 0px 30px;
+  }
+}

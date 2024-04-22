@@ -1,0 +1,18 @@
+.investor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+  gap: 15px 0px;
+  background: rgba(229, 231, 236);
+
+  &-title {
+    width: 60%;
+  }
+
+  &-author {
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(63, 71, 82);
+  }
+}

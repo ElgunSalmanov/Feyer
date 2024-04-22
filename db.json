@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Bucket Hat",
+      "price": "24.00",
+      "sale": false,
+      "stock": 8,
+      "category": "hat",
+      "description": "Cool and comfortable in any setting, wear our lightweight cotton bucket hat everywhere you go.",
+      "material": "100% cotton",
+      "color": "Navy blue",
+      "image": "./src/assets/products/bucket.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Cotton Sweater",
+      "oldprice": "45.90",
+      "price": "35.00",
+      "sale": true,
+      "sizes": {
+        "s": 12,
+        "m": 12,
+        "l": 5,
+        "xl": 12
+      },
+      "description": "This soft and lightweight cotton sweater is the perfect transitional piece. Pair it with our bucket hat for lazy days or layer over a polo shirt.",
+      "material": "100% cotton",
+      "color": "Sky blue",
+      "fit": "Relaxed",
+      "image": "./src/assets/products/cotton.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Knitted Hat",
+      "oldprice": "25.00",
+      "price": "19.00",
+      "sale": true,
+      "stock": 50,
+      "category": "hat",
+      "description": "Take the casual approach with our stretchy soft knit hat, made using sustainable materials.",
+      "material": "60% recycled wool, 40% organic cotton",
+      "color": "Forest green",
+      "image": "./src/assets/products/knitted.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Puffer Jacket",
+      "oldprice": "124.00",
+      "price": "94.00",
+      "sale": true,
+      "sizes": {
+        "s": 5,
+        "m": 3,
+        "l": 5,
+        "xl": 15
+      },
+      "category": "jacket",
+      "description": "Stay warm... Chic and functional, our puffer jacket is an essential piece for every winter closet.",
+      "material": "100% polyester",
+      "color": "Beige",
+      "fit": "Classic",
+      "image": "./src/assets/products/puffer.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Shirt Jacket",
+      "price": "49.90",
+      "sale": false,
+      "sizes": {
+        "s": 15,
+        "m": 15,
+        "l": 15,
+        "xl": 15
+      },
+      "category": "jacket",
+      "description": "Stylish and comfortable, layer any outfit with our cotton-blend shirt jacket. The deep forest green tone looks cool whatever the season.",
+      "material": "70% cotton, 30% linen",
+      "color": "Forest green",
+      "fit": "Relaxed",
+      "image": "./src/assets/products/shirt.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Utility Jacket",
+      "price": "44.90",
+      "sale": false,
+      "sizes": {
+        "s": 15,
+        "m": 15,
+        "l": 15,
+        "xl": 15
+      },
+      "category": "jacket",
+      "description": "Soft and versatile, pair our utility jacket with your favorite sneakers and a classic polo shirt.",
+      "material": "100% cotton",
+      "color": "White",
+      "fit": "Relaxed",
+      "image": "./src/assets/products/utility.jpeg"
+    }
+  ]
+}

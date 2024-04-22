@@ -1,0 +1,32 @@
+.life {
+  display: flex;
+  justify-content: center;
+  padding: 0px 100px;
+  gap: 0px 80px;
+  background: rgb(214, 222, 232);
+
+  &-contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 50px 0px;
+    gap: 20px 0px;
+
+    &-title {
+      width: 70%;
+      font-size: 50px;
+    }
+
+    &-description {
+      width: 80%;
+      font-size: 20px;
+      color: rgb(63, 71, 82);
+    }
+  }
+
+  &-image {
+    width: 650px;
+    height: 100%;
+    object-fit: cover;
+  }
+}

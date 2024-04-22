@@ -1,0 +1,55 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0px 100px;
+  padding: 25px;
+
+  &-image {
+    width: 45%;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0px;
+
+    &-title {
+      font-size: 50px;
+    }
+
+    &-price {
+      display: flex;
+      gap: 0px 5px;
+
+      &-original {
+        opacity: 0.4;
+        text-decoration: line-through;
+      }
+    }
+
+    &-stock {
+      display: flex;
+      align-items: center;
+      gap: 0px 25px;
+    }
+
+    &-button {
+      width: 25%;
+      height: 50px;
+      background: rgb(73, 88, 103);
+      border: 5px solid rgb(47, 47, 73);
+      color: #fff;
+      outline: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 16px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background: rgb(48, 63, 78);
+        border: 5px solid rgb(47, 47, 73);
+      }
+    }
+  }
+}

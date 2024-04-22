@@ -1,0 +1,91 @@
+.footer {
+  background: rgb(28, 40, 56);
+  color: rgb(255, 255, 255);
+  padding: 50px;
+
+  &-about {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    &-info {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px 0px;
+
+      &-description {
+        color: rgb(196, 204, 214);
+      }
+    }
+
+    &-form {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px 0px;
+
+      &-email {
+        width: 100%;
+        height: 50px;
+        border: none;
+        outline: none;
+        text-indent: 20px;
+        margin-bottom: 20px;
+      }
+
+      &-submit {
+        width: 25%;
+        height: 50px;
+        background: rgb(81, 97, 120);
+        border: 5px solid rgb(47, 47, 73);
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 16px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          border: 5px solid rgb(12, 12, 38);
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+
+  &-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+
+    &-address {
+      &-description {
+        width: 70%;
+        color: rgb(196, 204, 214);
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 5px 0px;
+      font-size: 18px;
+    }
+
+    &-description {
+      &-link {
+        color: rgb(196, 204, 214);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+::placeholder {
+  color: rgb(88, 101, 119);
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}

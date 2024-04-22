@@ -1,0 +1,42 @@
+@import "../../style/_inheritance.scss";
+
+.brand {
+  display: flex;
+  justify-content: center;
+  padding: 0px 100px;
+  background: rgb(214, 222, 232);
+
+  &-contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px 0px;
+
+    &-title {
+      width: 60%;
+      font-size: 50px;
+    }
+
+    &-navigate {
+      @extend %flexing;
+      width: 140px;
+      height: 50px;
+      text-transform: uppercase;
+      background: rgb(28, 56, 92);
+      color: rgba(255, 255, 255);
+      border: 5px solid rgb(47, 47, 73);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background: rgb(62, 62, 84);
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+
+  &-image {
+    width: 650px;
+    height: 100%;
+    object-fit: cover;
+  }
+}

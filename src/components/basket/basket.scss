@@ -1,0 +1,91 @@
+.basket {
+  position: fixed;
+  width: 350px;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  z-index: 1;
+  background: rgb(255, 255, 255);
+  box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: right 0.5s ease-in-out;
+  color: #000;
+  overflow-y: auto;
+
+  &.active {
+    right: 0;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 25px 0px;
+    height: 10%;
+
+    &-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 25px;
+      font-size: 30px;
+      background: rgb(255, 255, 255);
+      color: rgba(0, 0, 0);
+      cursor: pointer;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        &-image {
+          width: 120px;
+          height: 120px;
+        }
+
+        &-info {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          letter-spacing: 0.1px;
+          font-size: 12px;
+
+          &-title {
+            font-size: 13;
+            color: rgba(0, 0, 0);
+          }
+
+          &-size {
+            &-text {
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        &-delete {
+          height: 30px;
+          background: rgb(73, 88, 103);
+          border: 3px solid rgb(47, 47, 73);
+          color: #fff;
+          outline: none;
+          cursor: pointer;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          font-size: 14px;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            background: rgb(47, 47, 73);
+            border: 3px solid rgb(73, 88, 103);
+          }
+        }
+      }
+    }
+  }
+}

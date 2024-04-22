@@ -1,0 +1,56 @@
+.returns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  padding: 100px;
+  margin: 0 auto;
+  gap: 30px 0px;
+
+  &-title {
+    font-size: 40px;
+    letter-spacing: 0.5px;
+  }
+
+  &-link {
+    text-decoration: underline;
+    color: rgba(80, 80, 80);
+  }
+
+  &-conditions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    width: 90%;
+    color: rgba(80, 80, 80);
+
+    &-title {
+      font-size: 25px;
+      color: rgba(0, 0, 0);
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px 0px;
+
+      &-item {
+        list-style-type: disc;
+        margin: 0px 30px;
+      }
+    }
+  }
+
+  &-design {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    width: 90%;
+    color: rgba(80, 80, 80);
+
+    &-title {
+      font-size: 25px;
+      color: rgba(0, 0, 0);
+    }
+  }
+}

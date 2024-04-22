@@ -1,0 +1,143 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  z-index: 1;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255);
+
+  &-home {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px 25px;
+
+    .first-child {
+      &:hover {
+        ~ .navbar-popup {
+          visibility: inherit;
+        }
+      }
+    }
+
+    &-item {
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        .down {
+          animation: rotate 0.25s forwards;
+        }
+      }
+
+      &:not(:hover) {
+        .down {
+          animation: rotateback 0.25s forwards;
+        }
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
+
+      &::after {
+        display: block;
+        content: "";
+        border-bottom: 2px solid rgba(29, 30, 32);
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &-shopping {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px 5px;
+
+    &-icon {
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+
+  &-popup {
+    visibility: hidden;
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    top: 65%;
+    right: 55%;
+    border: 1px solid rgba(29, 30, 32, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      visibility: inherit;
+    }
+
+    &:not(:hover) {
+      visibility: hidden;
+    }
+
+    &-item {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+}
+
+.active {
+  color: rgb(67, 83, 105);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+  75% {
+    transform: rotate(150deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateback {
+  0% {
+    transform: rotate(180deg);
+  }
+  25% {
+    transform: rotate(150deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+  75% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
