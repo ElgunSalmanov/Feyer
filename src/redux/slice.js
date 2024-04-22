@@ -36,7 +36,7 @@ const slice = createSlice({
       ) {
         state.card = state.card.filter(
           (item) =>
-            item.id !== action.payload.id &&
+            item.id !== action.payload.id ||
             item.selectedSize !== action.payload.selectedSize
         );
       }
