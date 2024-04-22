@@ -28,7 +28,11 @@ const slice = createSlice({
     },
     removeFromCard: (state, action) => {
       if (
-        state.card.find((item) => item.id === action.payload.id) !== undefined
+        state.card.find((item) => item.id === action.payload.id) !==
+          undefined &&
+        state.card.find(
+          (item) => item.selectedSize === action.payload.selectedSize
+        )
       ) {
         state.card = state.card.filter((item) => item.id !== action.payload.id);
       }
