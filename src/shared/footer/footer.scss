@@ -17,7 +17,7 @@
     @include mobile {
       gap: 25px 0px;
       padding: 0px 0px 30px 0px;
-      font-size: 20px;
+      font-size: 16px;
       flex-direction: column;
     }
 
@@ -106,7 +106,7 @@
       font-size: 18px;
 
       @include mobile {
-        font-size: 20px;
+        font-size: 16px;
       }
     }
 
