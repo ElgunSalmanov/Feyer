@@ -1,3 +1,5 @@
+@import "../../style/_mixins.scss";
+
 .size {
   &-select {
     width: 50%;
@@ -6,5 +8,9 @@
     border: 0.5px solid #dadce0;
     outline: none;
     font-size: 16px;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }

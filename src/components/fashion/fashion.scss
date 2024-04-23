@@ -1,7 +1,15 @@
+@import "../../style/_mixins.scss";
+
 .fashion {
   display: flex;
   padding: 100px;
   gap: 0px 50px;
+
+  @include mobile {
+    flex-direction: column-reverse;
+    padding: 20px;
+    gap: 20px 0px;
+  }
 
   &-contain {
     display: flex;
@@ -21,5 +29,9 @@
   &-image {
     width: 70%;
     height: 100%;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }

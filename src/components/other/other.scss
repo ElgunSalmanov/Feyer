@@ -1,8 +1,21 @@
+@import "../../style/_mixins.scss";
+
 .other {
   display: flex;
   flex-direction: column;
   width: 20%;
   gap: 40px 0px;
+
+  @include mobile {
+    width: 100%;
+    gap: 20px;
+  }
+
+  &-title {
+    @include mobile {
+      font-size: 40px;
+    }
+  }
 
   &-list {
     display: flex;
@@ -14,6 +27,10 @@
     &-link {
       color: rgba(63, 71, 82);
       text-decoration: underline;
+
+      @include mobile {
+        font-size: 20px;
+      }
     }
   }
 }

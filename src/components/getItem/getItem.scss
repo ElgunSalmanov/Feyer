@@ -1,11 +1,23 @@
+@import "../../style/_mixins.scss";
+
 .item {
   display: flex;
   align-items: center;
   gap: 0px 100px;
   padding: 25px;
 
+  @include mobile {
+    flex-direction: column;
+    gap: 20px 0px;
+    padding: 0px;
+  }
+
   &-image {
     width: 45%;
+
+    @include mobile {
+      width: 95%;
+    }
   }
 
   &-info {
@@ -13,8 +25,17 @@
     flex-direction: column;
     gap: 15px 0px;
 
+    @include mobile {
+      gap: 10px 0px;
+      padding: 10px;
+    }
+
     &-title {
       font-size: 50px;
+
+      @include mobile {
+        font-size: 40px;
+      }
     }
 
     &-price {
@@ -45,6 +66,10 @@
       letter-spacing: 0.5px;
       font-size: 16px;
       transition: all 0.2s ease-in-out;
+
+      @include mobile {
+        width: 40%;
+      }
 
       &:hover {
         background: rgb(48, 63, 78);

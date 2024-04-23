@@ -1,9 +1,16 @@
+@import "../../style/_mixins.scss";
+
 .clothing {
   display: flex;
   justify-content: center;
   padding: 0px 100px;
   gap: 0px 80px;
   background: rgb(214, 222, 232);
+
+  @include mobile {
+    padding: 0px 20px 50px;
+    flex-direction: column;
+  }
 
   &-contain {
     display: flex;
@@ -12,15 +19,28 @@
     padding: 80px 0px;
     gap: 20px 0px;
 
+    @include mobile {
+      padding: 30px 0px;
+    }
+
     &-title {
       width: 70%;
       font-size: 50px;
+
+      @include mobile {
+        width: 100%;
+        font-size: 50px;
+      }
     }
 
     &-description {
       width: 100%;
       font-size: 20px;
       color: rgb(63, 71, 82);
+
+      @include mobile {
+        font-size: 18px;
+      }
     }
   }
 
@@ -28,5 +48,9 @@
     width: 850px;
     height: 100%;
     object-fit: cover;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }

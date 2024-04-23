@@ -1,8 +1,14 @@
+@import "../../style/_mixins.scss";
+
 .form {
   display: flex;
   flex-direction: column;
   width: 50%;
   gap: 25px 0px;
+
+  @include mobile {
+    width: 100%;
+  }
 
   &-title {
     font-size: 50px;
@@ -10,6 +16,10 @@
 
   &-description {
     color: rgba(63, 71, 82);
+
+    @include mobile {
+      font-size: 17px;
+    }
   }
 
   &-box {
@@ -60,6 +70,10 @@
       letter-spacing: 0.5px;
       font-size: 16px;
       transition: all 0.2s ease-in-out;
+
+      @include mobile {
+        width: 35%;
+      }
 
       &:hover {
         border: 5px solid rgb(130, 130, 130);

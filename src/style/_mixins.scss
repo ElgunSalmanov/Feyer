@@ -19,7 +19,7 @@
 }
 
 @mixin mobile {
-  @media (300<width<575) {
+  @media (max-width: #{$small}) {
     @content;
   }
 }

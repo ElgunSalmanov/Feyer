@@ -1,3 +1,5 @@
+@import "../../style/_mixins.scss";
+
 .returns {
   display: flex;
   flex-direction: column;
@@ -6,6 +8,11 @@
   padding: 100px;
   margin: 0 auto;
   gap: 30px 0px;
+
+  @include mobile {
+    padding: 20px;
+    width: 100%;
+  }
 
   &-title {
     font-size: 40px;
@@ -23,6 +30,10 @@
     gap: 20px 0px;
     width: 90%;
     color: rgba(80, 80, 80);
+
+    @include mobile {
+      width: 100%;
+    }
 
     &-title {
       font-size: 25px;
@@ -47,6 +58,10 @@
     gap: 20px 0px;
     width: 90%;
     color: rgba(80, 80, 80);
+
+    @include mobile {
+      width: 100%;
+    }
 
     &-title {
       font-size: 25px;

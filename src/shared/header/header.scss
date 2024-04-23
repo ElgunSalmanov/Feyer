@@ -1,3 +1,5 @@
+@import "../../style/_mixins.scss";
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -10,6 +12,21 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255);
 
+  @include mobile {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &-hamburger {
+    display: none;
+
+    @include mobile {
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+
   &-home {
     font-size: 25px;
     font-weight: 600;
@@ -20,6 +37,18 @@
     justify-content: space-around;
     align-items: center;
     gap: 0px 25px;
+
+    @include mobile {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      background: rgba(255, 255, 255);
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+      right: 0px;
+      top: 55px;
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+    }
 
     .first-child {
       &:hover {
@@ -74,18 +103,22 @@
 
   &-popup {
     visibility: hidden;
-    width: 100px;
-    height: 60px;
+    width: 120px;
+    height: 80px;
     position: absolute;
     top: 65%;
     right: 55%;
-    border: 1px solid rgba(29, 30, 32, 0.2);
     border-radius: 5px;
-    padding: 5px;
+    padding: 15px 25px 0px 25px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     display: flex;
     flex-direction: column;
+
+    @include mobile {
+      top: 75%;
+      right: 65%;
+    }
 
     &:hover {
       visibility: inherit;

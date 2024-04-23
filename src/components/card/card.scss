@@ -1,3 +1,5 @@
+@import "../../style/_mixins.scss";
+
 .card {
   display: flex;
   flex-direction: column;
@@ -10,10 +12,21 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 20px 0px;
+      padding: 0px 20px;
+      font-size: 18px;
+    }
   }
 
   &-title {
     font-size: 45px;
     text-transform: uppercase;
+
+    @include mobile {
+      font-size: 40px;
+    }
   }
 }

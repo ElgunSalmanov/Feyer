@@ -1,3 +1,9 @@
+@import "../../style/_mixins.scss";
+
 .get {
   padding: 100px;
+
+  @include mobile {
+    padding: 10px;
+  }
 }

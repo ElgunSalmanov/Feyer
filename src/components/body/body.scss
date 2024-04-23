@@ -1,8 +1,15 @@
+@import "../../style/_mixins.scss";
+
 .body {
   display: flex;
   flex-direction: column;
   gap: 30px 0px;
   padding: 100px;
+
+  @include mobile {
+    width: 100%;
+    padding: 10px;
+  }
 
   &-design {
     width: 100%;
@@ -11,8 +18,16 @@
     gap: 15px 0px;
     padding: 0px 100px;
 
+    @include mobile {
+      padding: 0px 10px;
+    }
+
     &-image {
       width: 80%;
+
+      @include mobile {
+        width: 100%;
+      }
     }
 
     &-list {
@@ -33,4 +48,8 @@
 .configration {
   width: 50%;
   color: rgba(136, 136, 136);
+
+  @include mobile {
+    width: 100%;
+  }
 }

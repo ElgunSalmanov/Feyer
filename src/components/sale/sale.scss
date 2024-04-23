@@ -1,4 +1,5 @@
 @import "../../style/_inheritance.scss";
+@import "../../style/_mixins.scss";
 
 .sales {
   display: flex;
@@ -10,6 +11,13 @@
     justify-content: center;
     padding: 80px 0px;
     gap: 0px 20px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 20px 0px;
+      padding: 50px 20px;
+      font-size: 18px;
+    }
   }
 
   &-navigate {
