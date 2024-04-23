@@ -35,19 +35,14 @@ function Header() {
       <NavLink to="/" className="navbar-home">
         Feyer
       </NavLink>
-      <ul
-        className="navbar-list"
-        style={{
-          opacity: isMenuOpen ? 1 : 0,
-        }}
-      >
+      <ul className="navbar-list" style={{ top: isMenuOpen ? "70%" : "-200%" }}>
         <NavLink
           to="/shop"
           onClick={() => setIsBlock(true)}
           className={({ isActive }) =>
             isActive
               ? "navbar-list-item first-child active"
-              : "navbar-list-item  first-child"
+              : "navbar-list-item first-child"
           }
         >
           Shop
