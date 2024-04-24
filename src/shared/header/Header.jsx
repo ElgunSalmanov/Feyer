@@ -50,7 +50,7 @@ function Header() {
         </NavLink>
         <div
           className="navbar-popup"
-          style={{ display: isBlock ? "flex" : "none" }}
+          style={{ display: isBlock ? "flex" : "flex" }}
         >
           <NavLink to="/jackets" className="navbar-popup-item">
             Jackets
