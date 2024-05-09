@@ -16,6 +16,7 @@ import Buy from "../src/pages/buy/Buy.jsx";
 import store from "./redux/store.js";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Provider } from "react-redux";
+import NotFound from "./pages/notFound/NotFound.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -36,6 +37,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/hats" element={<Hats />} />
             <Route path="/buy" element={<Buy />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </Provider>
